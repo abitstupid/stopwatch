@@ -1,0 +1,111 @@
+* {
+    color: var(--black);
+    user-select: none;
+}
+:root {
+    --black: #404040;
+    --white: #ffffff;
+
+}
+
+@font-face {
+    font-family: "Offbit Regular";
+    src: url("fonts/OTF/OffBitTrial_Regular.otf"),
+    url("fonts/TTF/OffBitTrial_Regular.ttf");
+}
+
+@font-face {
+    font-family: "Offbit DotBold";
+    src: url("fonts/OTF/OffBitTrial_DotBold.otf"),
+    url("fonts/TTF/OffBitTrial_DotBold.ttf");
+}
+
+.regular-font {
+    font-family: "Offbit Regular", sans-serif;
+    letter-spacing: 3px;
+}
+
+.bold-font {
+    font-family: "Offbit DotBold", sans-serif;
+    letter-spacing: 2px;
+}
+
+/* text center class */
+.text-center {
+    text-align: center;
+}
+
+/* font size  */
+.biggest-font-size {
+    font-size: 3.8rem;
+}
+
+.clock-font-size {
+        font-size: 8vw;
+    }
+
+.body-font-size {
+
+}
+
+/* div center class */
+.div-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* overflow hidden */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 576px) {
+    /* font size  */
+.biggest-font-size {
+    font-size: 3.5rem;
+}
+
+.clock-font-size {
+        font-size: 7vw;
+    }
+
+.body-font-size {
+
+}
+}
+
+@media screen and (min-width: 768px) {
+    .clock-font-size {
+        font-size: 3.4rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    /* font size  */
+    .biggest-font-size {
+        font-size: 4rem;
+    }
+    .clock-font-size {
+        font-size: 3.5rem;
+    }
+
+    .body-font-size {
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 1400px) {
+
+}
+
+
+

@@ -1,0 +1,150 @@
+.section-1 , .section-3 {   
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+    gap: 20px;
+}
+
+
+.square {
+    width: 200px;
+    height: 200px;
+    border-radius: 48px;
+}
+
+.square-1 {
+    background: #589EE1;
+    position: relative;
+}
+
+.s1-child {
+    height: 90%;
+    width: 90%;
+    background-color: #FF9ACC;
+    border-radius: 50%;
+    animation: square1Color 3s infinite linear;
+
+    position: relative;
+    bottom: 0;
+    transition: 2s;
+}
+
+.credit-div {
+    position: absolute;
+    font-family: "Offbit DOtBold";
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+.square-1:hover .s1-child {
+    bottom: -70%;
+}
+
+.square-2 {
+    background: #CDFF01;
+}
+
+.s2-child {
+    height: 80%;
+    width: 50%;
+    background-color: #7A58FF;
+    border-radius: 40px;
+
+    position: relative;
+    bottom: -40%;
+
+    box-shadow: 20px -30px 0 0px #404040;
+}
+
+.square-3 {
+    background: #FFF500;
+}
+
+/* s3-child starts  */
+.s3-child {
+    width:70%;
+    height:70%;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(25deg);
+    animation: rotate 5s infinite linear;
+
+}
+
+.octagon {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    transform: rotate(45deg);
+    background: #E084FF;
+}
+.octagon:before {
+    position: absolute;
+    transform: rotate(45deg);
+    content: '';
+    border: inherit;
+}
+
+/* s3-child ends */
+.square-4 {
+    background: #AAE6B8;
+}
+
+.s4-child {
+    width: 0; 
+    height: 0; 
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    
+    border-bottom: 150px solid #FF6E5C;
+}
+.square-5 {
+    background: #FF9ACC;
+}
+
+.s5-child {
+    width: 35%;
+    height: 55%;
+    background-color: #FFF500;
+    animation: rotate 5s infinite linear;
+    /* transform: rotate(60deg) skewY(45deg); */
+
+}
+
+.square-6 {
+    background: #7A58FF;
+}
+
+.s6-child {
+    height: 70%;
+    width: 70%;
+    background-color: #AAE6B8;
+    border-radius: 50%;
+    animation: square6Color 3s infinite linear;
+
+}
+
+
+@media screen and (max-width: 1199px) {
+    .section-1 , .section-3 {   
+        gap: 60px;
+    }
+
+    .square {
+        width: 180px;
+        height: 180px;
+        border-radius: 32px;
+    }    
+
+    .s4-child {
+        width: 0; 
+        height: 0; 
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        
+        border-bottom: 100px solid #FF6E5C;
+    }
+}
+
+

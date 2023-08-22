@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Stopwatch</title>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="styles/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="styles/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="styles/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="styles/favicon_io/site.webmanifest">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/root.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/shapes.css">
+        <!-- Metadata -->
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta name="author" content="Hemant Rai">
+        <meta name="description" content="">
+    </head>
+    <body>
+        <section id="shapes-1" class="section section-1 shapes div-center">
+            <div class="square square-1 div-center overflow-hidden">
+                <div class="s1-child"></div>
+            </div>
+            <div class="square square-2 div-center overflow-hidden">
+                <div class="s2-child"></div>
+            </div>
+            <div class="square square-3 div-center">
+                <div class="s3-child">
+                    <div class="octagon"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stopwatch-wrapper" class="section section-2">
+        <header>
+            <h1 id="heading-1" class="text-center div-center bold-font biggest-font-size">Stopwatch</h1>
+        </header>
+        <main id="stopwatch-inner" class=" div-center">
+            <div id="stopwatch" class="div-center">
+                <div id="clock-face" class="div-center">
+                    <p id="time" class="regular-font clock-font-size"><span id="seconds">00</span>:<span id="tens">00</span></p>
+                        <button id="start-stop-btn" class="regular-font body-font-size">Start</button>
+                        <button id="reset-btn" class="regular-font body-font-size">Reset</button>
+                    </div>   
+            </div>
+        </main>
+        </section>
+
+        <section id="shapes-2" class="section section-3 shapes div-center">
+            <div class="square square-4 div-center">
+                <div class="s4-child"></div>
+            </div>
+            <div class="square square-5 div-center">
+                <div class="s5-child"></div>
+            </div>
+            <div class="square square-6 div-center">
+                <div class="s6-child"></div>
+            </div>
+        </section>
+        <!-- Script -->
+        <script src="script.js" defer></script>
+    </body>
+</html>

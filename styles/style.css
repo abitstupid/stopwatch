@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.section-1 , .section-2 , .section-3 {
+    height: 100vh;
+}
+
+.section-1, .section-3 {
+    flex-basis: 0%;
+    visibility: hidden;
+    display: none;
+}
+
+.section-2 {
+    flex-basis: 100%;
+}
+
+#heading-1 {
+    height: 30vh;
+    align-items: center;
+}
+
+#stopwatch {
+    height: 70vh;
+    width: 100%;
+
+    align-items: flex-start;
+}
+
+#clock-face {
+    flex-direction: column;
+    gap: 3vh;
+
+    height: 80%;
+    width: 90%;
+    background: url("../images/clock-face.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top: 1rem;
+}
+
+p#time {
+    margin-bottom: 2.5rem;
+}
+
+button {
+    width: 25vw;
+    height: 2.3rem;
+
+    border: 2px solid var(--black);
+    border-radius: 0 !important;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+button:focus-visible {
+    border-radius: 0px !important;
+}
+
+@media screen and (min-width: 576px) {
+
+    #heading-1 {
+        height: 12vh;
+        align-items: flex-end;
+    }
+    
+    #stopwatch {
+        height: 82vh;
+        width: 100%;
+    
+        align-items: center;
+    }
+
+    #clock-face {
+        flex-direction: column;
+        gap: 3vh;
+    
+        height: 90%;
+        width: 70%;
+    
+        padding-top: 0rem;
+    }
+    button {
+        width: 23vw;
+        height: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #clock-face {
+        flex-direction: column;
+        gap: 3vh;
+    
+        height: 80%;
+        width: 70%;
+    
+        padding-top: 0rem;
+    }
+    button {
+        width: 9rem;
+        height: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-1, .section-3 {
+        visibility: visible;
+        display: flex;
+        flex-basis: 20%;
+    }
+
+    .section-2 {
+        flex-basis: 60%;
+    }
+
+    #clock-face {
+    
+        height: 92%;
+        width: 92%;
+    
+        padding-top: 0rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-1, .section-3 {
+        visibility: visible;
+        display: flex;
+        flex-basis: 25%;
+    }
+    
+    .section-2 {
+        flex-basis: 50%;
+    }
+    
+    
+    p#time {
+        margin-bottom: 3rem;
+    }
+
+    
+    button {
+        width: 10rem;
+        height: 2.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+}
