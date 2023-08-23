@@ -60,30 +60,40 @@ window.onload = function () {
 // animation
 
 const square1 = document.querySelector(".square-1");
-const s1Child = document.querySelector(".s1-child");
+const square6 = document.querySelector(".square-6");
 
-square1.addEventListener("mouseenter", () => {
+function creditsEnter(e) {
+    
     const creditDiv = document.createElement("div");
-    creditDiv.setAttribute("class" , "credit-div");
+    creditDiv.setAttribute("class" , "credit-div text-center");
 
-    square1.appendChild(creditDiv);
+    e.target.appendChild(creditDiv);
 
     const creditTitle = document.createElement("p");
     creditTitle.setAttribute("class" , "credit-title");
     const creditAuthor = document.createElement("p");
     creditAuthor.setAttribute("class" , "credit-author");
-    
+    const creditProfile = document.createElement("p");
+    creditProfile.setAttribute("class" , "credit-profile");
     creditDiv.appendChild(creditTitle);
     creditDiv.appendChild(creditAuthor);
+    creditDiv.appendChild(creditProfile);
 
 
     creditTitle.textContent = "Created By:";
     creditAuthor.textContent = "Hemant Rai";
-})
+    creditProfile.textContent = "Go to Profile";
+}
 
-square1.addEventListener("mouseleave", () => {
+function creditsLeave() {
     const creditDiv = document.querySelector(".credit-div");
     if (creditDiv) {
         creditDiv.remove();
     }
-})
+}
+
+square1.addEventListener("mouseenter", creditsEnter);
+square6.addEventListener("mouseenter", creditsEnter);
+
+square1.addEventListener("mouseleave", creditsLeave)
+square6.addEventListener("mouseleave", creditsLeave)

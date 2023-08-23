@@ -2,7 +2,6 @@
     flex-direction: column;
     flex-wrap: nowrap;
     flex-shrink: 0;
-    flex-grow: 0;
     gap: 20px;
 }
 
@@ -11,6 +10,7 @@
     width: 200px;
     height: 200px;
     border-radius: 48px;
+    flex-shrink: 0;
 }
 
 .square-1 {
@@ -37,6 +37,10 @@
     font-size: 1.3rem;
 }
 
+.credit-profile {
+    font-size: 0.8rem;
+    font-family: "Offbit Regular";
+}
 .square-1:hover .s1-child {
     bottom: -70%;
 }
@@ -99,6 +103,11 @@
     
     border-bottom: 150px solid #FF6E5C;
 }
+
+.square-4:hover .s4-child {
+    animation: scale 5s infinite;
+
+}
 .square-5 {
     background: #FF9ACC;
 }
@@ -126,14 +135,14 @@
 }
 
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) and (max-height: 600px) {
     .section-1 , .section-3 {   
         gap: 60px;
     }
 
     .square {
         width: 180px;
-        height: 180px;
+        height: 180px; 
         border-radius: 32px;
     }    
 
@@ -146,5 +155,27 @@
         border-bottom: 100px solid #FF6E5C;
     }
 }
+
+@media screen and (max-height: 600px) {
+    .section-1 , .section-3 {   
+        gap: 20px;
+    }
+
+    .square {
+        width: 150px;
+        height: 150px; 
+        border-radius: 32px;
+    }    
+
+    .s4-child {
+        width: 0; 
+        height: 0; 
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        
+        border-bottom: 100px solid #FF6E5C;
+    }
+}
+
 
 

@@ -2,6 +2,7 @@
     color: var(--black);
     user-select: none;
 }
+
 :root {
     --black: #404040;
     --white: #ffffff;

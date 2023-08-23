@@ -69,8 +69,19 @@ button {
     cursor: pointer;
 }
 
+/* button:hover {
+    box-shadow: 10px -10px 0 0 #4040405f;
+} */
+
 button:focus-visible {
     border-radius: 0px !important;
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        height: fit-content;
+        overflow: auto;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -136,6 +147,18 @@ button:focus-visible {
         width: 92%;
     
         padding-top: 0rem;
+    }
+}
+@media screen and (max-height: 480px) {
+    body {
+        height: 450px;
+    }
+
+    #heading-1 {
+        height: 80px;
+    }
+    #stopwatch {
+        height: 370px;
     }
 }
 
